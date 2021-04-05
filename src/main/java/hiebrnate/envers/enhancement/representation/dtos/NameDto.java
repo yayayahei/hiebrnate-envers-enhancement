@@ -1,16 +1,13 @@
-package hiebrnate.envers.enhancement.domain.value_object;
+package hiebrnate.envers.enhancement.representation.dtos;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Embeddable;
-
-@Embeddable
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Name {
+public class NameDto {
     private String firstName;
     private String lastName;
     private String fullName;
