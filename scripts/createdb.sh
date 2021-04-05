@@ -1,0 +1,1 @@
+docker run --name mysql-envers-enhancement -p 3308:3306 -e MYSQL_DATABASE=envers_enhancement -e MYSQL_ROOT_PASSWORD=root -d -v envers-enhancement:/var/lib/mysql mysql:5.7 --character-set-server=utf8 --collation-server=utf8_general_ci
