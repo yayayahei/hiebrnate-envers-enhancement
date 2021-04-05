@@ -1,6 +1,6 @@
 package hiebrnate.envers.enhancement.application;
 
-import hiebrnate.envers.enhancement.domain.entity.Person;
+import hiebrnate.envers.enhancement.domain.entities.Person;
 import hiebrnate.envers.enhancement.domain.repositories.PersonsRepository;
 import org.springframework.stereotype.Service;
 
@@ -17,5 +17,9 @@ public class PersonsQueryService {
 
     public List<Person> getPersons() {
         return personsRepository.findAll();
+    }
+
+    public Person findById(Long id) {
+        return personsRepository.getOne(id);
     }
 }
